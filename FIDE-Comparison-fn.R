@@ -16,3 +16,15 @@ load_data <- function(local=FALSE)
   df <- read.csv(fpath)
   return(df)
 }
+
+
+#### data prep ####
+remove_username <- function(df)
+{
+  if(any(duplicated(df$username))) stop("Duplicated usernames found.")
+  df <- df[!colnames(df) %in% "username"]
+  
+  # out
+  print("Removed column 'username'")
+  return(df)
+}

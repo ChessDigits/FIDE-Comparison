@@ -9,3 +9,4 @@ pip
 "
 
 df <- load_data()
+df <- remove_username(df)
