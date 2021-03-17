@@ -10,3 +10,5 @@ pip
 
 df <- load_data()
 df <- remove_username(df)
+tt <- ttsplit(df)
+init_h2o()
