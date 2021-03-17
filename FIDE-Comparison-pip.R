@@ -8,3 +8,4 @@ https://github.com/EthanLebowitz/ChessData/blob/master/FIDEreportedLichess.csv
 pip
 "
 
+df <- load_data()
